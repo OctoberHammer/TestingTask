@@ -137,7 +137,6 @@ import AVFoundation
     self.stateLabel.center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
   }
   
-  
   private func drawProgressArc() {
     let center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
     //let radius = min(self.bounds.width / 2 , self.bounds.height / 2)
