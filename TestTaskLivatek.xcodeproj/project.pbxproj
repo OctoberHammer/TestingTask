@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E378C2ED9676FCC94C5AD7A /* Pods_TestTaskLivatek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B80A976B1F9B0015C6914A /* Pods_TestTaskLivatek.framework */; };
 		C37477851FF4EE1300188452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37477841FF4EE1300188452 /* AppDelegate.swift */; };
 		C37477871FF4EE1300188452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37477861FF4EE1300188452 /* ViewController.swift */; };
 		C374778A1FF4EE1300188452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37477881FF4EE1300188452 /* Main.storyboard */; };
@@ -21,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C49C3B5E1E36BBEE522C46D /* Pods-TestTaskLivatek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskLivatek.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek.release.xcconfig"; sourceTree = "<group>"; };
+		599B9BD14781EF218CD12E4D /* Pods-TestTaskLivatek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskLivatek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek.debug.xcconfig"; sourceTree = "<group>"; };
+		A9B80A976B1F9B0015C6914A /* Pods_TestTaskLivatek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskLivatek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37477811FF4EE1300188452 /* TestTaskLivatek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskLivatek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37477841FF4EE1300188452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37477861FF4EE1300188452 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E378C2ED9676FCC94C5AD7A /* Pods_TestTaskLivatek.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D605132CF8ED2DC4E9B86D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				599B9BD14781EF218CD12E4D /* Pods-TestTaskLivatek.debug.xcconfig */,
+				2C49C3B5E1E36BBEE522C46D /* Pods-TestTaskLivatek.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2FA863ABCADCA1DA0796B6DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B80A976B1F9B0015C6914A /* Pods_TestTaskLivatek.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C37477781FF4EE1300188452 = {
 			isa = PBXGroup;
 			children = (
 				C37477831FF4EE1300188452 /* TestTaskLivatek */,
 				C37477821FF4EE1300188452 /* Products */,
+				1D605132CF8ED2DC4E9B86D3 /* Pods */,
+				2FA863ABCADCA1DA0796B6DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C37477931FF4EE1300188452 /* Build configuration list for PBXNativeTarget "TestTaskLivatek" */;
 			buildPhases = (
+				B1ECA45B690158E322C8502B /* [CP] Check Pods Manifest.lock */,
 				C374777D1FF4EE1300188452 /* Sources */,
 				C374777E1FF4EE1300188452 /* Frameworks */,
 				C374777F1FF4EE1300188452 /* Resources */,
+				82725B1BFBB07BFDAA84B8AC /* [CP] Embed Pods Frameworks */,
+				62684BA200CC3F5B243BD580 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +200,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62684BA200CC3F5B243BD580 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82725B1BFBB07BFDAA84B8AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Pantomime/Pantomime.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pantomime.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1ECA45B690158E322C8502B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTaskLivatek-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C374777D1FF4EE1300188452 /* Sources */ = {
@@ -320,6 +401,7 @@
 		};
 		C37477941FF4EE1300188452 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 599B9BD14781EF218CD12E4D /* Pods-TestTaskLivatek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +418,7 @@
 		};
 		C37477951FF4EE1300188452 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C49C3B5E1E36BBEE522C46D /* Pods-TestTaskLivatek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
