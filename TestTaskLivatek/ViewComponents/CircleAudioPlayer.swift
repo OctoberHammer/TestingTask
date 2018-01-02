@@ -93,7 +93,8 @@ import AVFoundation
     solidGround.stroke()
     solidGround.fill()
     drawProgressArc()
-    //addPlayPauseBtn()
+    clipsToBounds = true
+    layer.masksToBounds = true
   }
   
   
