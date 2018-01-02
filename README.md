@@ -59,6 +59,15 @@ And the task isn’t that complicated to require importing a lot of third party 
 
 # IMPLEMENTATION:
 
+1. Visual Component
+2. Complex Gesture Recognizer
+3. Donload Manifest, Parsing, then fetching audio file
+
+
+
+
+
+
 
 
 

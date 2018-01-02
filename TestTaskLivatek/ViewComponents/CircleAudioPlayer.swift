@@ -169,6 +169,7 @@ import AVFoundation
   }
   
   
+  
   private func pause() {
     self.state = .paused
     player?.pause()
