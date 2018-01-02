@@ -1,5 +1,6 @@
 # TestingTask
 Testing Task for iOS-developer position
+=======================================
 
 ## Testing task for mobile developers
 [We have a simple HLS stream available on the following URL:] (http://pubcache1.arkiva.de/test/hls_index.m3u8)
@@ -52,3 +53,9 @@ And the task isn’t that complicated to require importing a lot of third party 
 
 ### Target device: 
 **iPhone**
+
+
+
+
+# IMPLEMENTATION:
+=================
