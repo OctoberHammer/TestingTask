@@ -66,7 +66,7 @@
 		C37477831FF4EE1300188452 /* TestTaskLivatek */ = {
 			isa = PBXGroup;
 			children = (
-				C3E65ECB1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 */,
+				C3E65ED21FFC1C01002208A0 /* LocalResorces */,
 				C37477841FF4EE1300188452 /* AppDelegate.swift */,
 				C37477861FF4EE1300188452 /* ViewController.swift */,
 				C3E65ED11FFC1BC9002208A0 /* ComplexGestureRecognizer */,
@@ -87,6 +87,14 @@
 				C3E65ECF1FFBC1B6002208A0 /* DragAndDropAndPushRecognizer.swift */,
 			);
 			path = ComplexGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		C3E65ED21FFC1C01002208A0 /* LocalResorces */ = {
+			isa = PBXGroup;
+			children = (
+				C3E65ECB1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 */,
+			);
+			path = LocalResorces;
 			sourceTree = "<group>";
 		};
 		C3FB22BC1FF6AA5000D5F9B3 /* ViewComponents */ = {
