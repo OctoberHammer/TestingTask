@@ -22,31 +22,43 @@ class DragAndDropAndPushRecognizer {
     self.parentView = parentView
     self.movableView = movableView
 
-    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.pushView(_:)))
-    swipeLeft.direction = .left
-    movableView.addGestureRecognizer(swipeLeft)
-    
-    let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.pushView(_:)))
-    swipeRight.direction = .right
-    movableView.addGestureRecognizer(swipeRight)
-    
-    let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.pushView(_:)))
-    swipeUp.direction = .up
-    movableView.addGestureRecognizer(swipeUp)
-    
-    let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.pushView(_:)))
-    swipeDown.direction = .down
-    movableView.addGestureRecognizer(swipeDown)
-    
-    self.swipes = [swipeLeft, swipeRight , swipeUp, swipeDown]
-    
-    
     panGesture = UIPanGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.dragAndDropView(_:)))
     
-    panGesture.require(toFail: swipeLeft)
-    panGesture.require(toFail: swipeRight)
-    panGesture.require(toFail: swipeUp)
-    panGesture.require(toFail: swipeDown)
+    let directionArray = [UISwipeGestureRecognizerDirection.right, UISwipeGestureRecognizerDirection.left, UISwipeGestureRecognizerDirection.up, UISwipeGestureRecognizerDirection.down]
+    
+    for everyDirection in directionArray {
+      let swipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.pushView(_:)))
+      swipeRecognizer.direction = everyDirection
+      self.swipes.append(swipeRecognizer)
+      movableView.addGestureRecognizer(swipeRecognizer)
+      panGesture.require(toFail: swipeRecognizer)
+    }
+    
+//    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.pushView(_:)))
+//    swipeLeft.direction = .left
+//    movableView.addGestureRecognizer(swipeLeft)
+//
+//    let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.pushView(_:)))
+//    swipeRight.direction = .right
+//    movableView.addGestureRecognizer(swipeRight)
+//
+//    let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.pushView(_:)))
+//    swipeUp.direction = .up
+//    movableView.addGestureRecognizer(swipeUp)
+//
+//    let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(DragAndDropAndPushRecognizer.pushView(_:)))
+//    swipeDown.direction = .down
+//    movableView.addGestureRecognizer(swipeDown)
+//
+//    self.swipes = [swipeLeft, swipeRight , swipeUp, swipeDown]
+//
+//
+    
+    
+//    panGesture.require(toFail: swipeLeft)
+//    panGesture.require(toFail: swipeRight)
+//    panGesture.require(toFail: swipeUp)
+//    panGesture.require(toFail: swipeDown)
     
     movableView.addGestureRecognizer(panGesture)
   }
