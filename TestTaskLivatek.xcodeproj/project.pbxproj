@@ -69,7 +69,7 @@
 				C3E65ECB1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 */,
 				C37477841FF4EE1300188452 /* AppDelegate.swift */,
 				C37477861FF4EE1300188452 /* ViewController.swift */,
-				C3E65ECF1FFBC1B6002208A0 /* DragAndDropAndPushRecognizer.swift */,
+				C3E65ED11FFC1BC9002208A0 /* ComplexGestureRecognizer */,
 				C37477961FF4EE3F00188452 /* PlayerViewController.swift */,
 				C37477881FF4EE1300188452 /* Main.storyboard */,
 				C3FB22BC1FF6AA5000D5F9B3 /* ViewComponents */,
@@ -79,6 +79,14 @@
 				C3FB22BA1FF65DD100D5F9B3 /* HelpingFunctions.swift */,
 			);
 			path = TestTaskLivatek;
+			sourceTree = "<group>";
+		};
+		C3E65ED11FFC1BC9002208A0 /* ComplexGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				C3E65ECF1FFBC1B6002208A0 /* DragAndDropAndPushRecognizer.swift */,
+			);
+			path = ComplexGestureRecognizer;
 			sourceTree = "<group>";
 		};
 		C3FB22BC1FF6AA5000D5F9B3 /* ViewComponents */ = {
