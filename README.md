@@ -1,8 +1,5 @@
-# TestingTask
-Testing Task for iOS-developer position
-=======================================
 
-## Testing task for mobile developers
+# Testing task for mobile developers
 [We have a simple HLS stream available on the following URL:] (http://pubcache1.arkiva.de/test/hls_index.m3u8)
 It contains two audio tracks and several video tracks.
 We need to have an app which implements an simply audio player. 
@@ -57,5 +54,30 @@ And the task isn’t that complicated to require importing a lot of third party 
 
 
 
+
+
+
 # IMPLEMENTATION:
-=================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
