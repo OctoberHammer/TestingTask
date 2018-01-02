@@ -1,6 +1,0 @@
-framework module Pods_TestTaskLivatek {
-  umbrella header "Pods-TestTaskLivatek-umbrella.h"
-
-  export *
-  module * { export * }
-}
