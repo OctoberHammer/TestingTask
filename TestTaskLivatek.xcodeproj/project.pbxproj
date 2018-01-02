@@ -12,6 +12,12 @@
 		C374778A1FF4EE1300188452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37477881FF4EE1300188452 /* Main.storyboard */; };
 		C374778C1FF4EE1300188452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C374778B1FF4EE1300188452 /* Assets.xcassets */; };
 		C374778F1FF4EE1300188452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C374778D1FF4EE1300188452 /* LaunchScreen.storyboard */; };
+		C37477971FF4EE3F00188452 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37477961FF4EE3F00188452 /* PlayerViewController.swift */; };
+		C3E65ECC1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C3E65ECB1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 */; };
+		C3E65ED01FFBC1B6002208A0 /* DragAndDropAndPushRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E65ECF1FFBC1B6002208A0 /* DragAndDropAndPushRecognizer.swift */; };
+		C3FB22B51FF636A700D5F9B3 /* CircleAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB22B41FF636A700D5F9B3 /* CircleAudioPlayer.swift */; };
+		C3FB22BB1FF65DD100D5F9B3 /* HelpingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB22BA1FF65DD100D5F9B3 /* HelpingFunctions.swift */; };
+		C3FB22BE1FF9638F00D5F9B3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB22BD1FF9638F00D5F9B3 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		C374778B1FF4EE1300188452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C374778E1FF4EE1300188452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C37477901FF4EE1300188452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C37477961FF4EE3F00188452 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		C3E65ECB1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - Suzanne Vega - Tom's Diner.mp3"; sourceTree = "<group>"; };
+		C3E65ECF1FFBC1B6002208A0 /* DragAndDropAndPushRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropAndPushRecognizer.swift; sourceTree = "<group>"; };
+		C3FB22B41FF636A700D5F9B3 /* CircleAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAudioPlayer.swift; sourceTree = "<group>"; };
+		C3FB22BA1FF65DD100D5F9B3 /* HelpingFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpingFunctions.swift; sourceTree = "<group>"; };
+		C3FB22BD1FF9638F00D5F9B3 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,28 @@
 		C37477831FF4EE1300188452 /* TestTaskLivatek */ = {
 			isa = PBXGroup;
 			children = (
+				C3E65ECB1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 */,
 				C37477841FF4EE1300188452 /* AppDelegate.swift */,
 				C37477861FF4EE1300188452 /* ViewController.swift */,
+				C3E65ECF1FFBC1B6002208A0 /* DragAndDropAndPushRecognizer.swift */,
+				C37477961FF4EE3F00188452 /* PlayerViewController.swift */,
 				C37477881FF4EE1300188452 /* Main.storyboard */,
+				C3FB22BC1FF6AA5000D5F9B3 /* ViewComponents */,
 				C374778B1FF4EE1300188452 /* Assets.xcassets */,
 				C374778D1FF4EE1300188452 /* LaunchScreen.storyboard */,
 				C37477901FF4EE1300188452 /* Info.plist */,
+				C3FB22BA1FF65DD100D5F9B3 /* HelpingFunctions.swift */,
 			);
 			path = TestTaskLivatek;
+			sourceTree = "<group>";
+		};
+		C3FB22BC1FF6AA5000D5F9B3 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C3FB22BD1FF9638F00D5F9B3 /* RoundButton.swift */,
+				C3FB22B41FF636A700D5F9B3 /* CircleAudioPlayer.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E65ECC1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 in Resources */,
 				C374778F1FF4EE1300188452 /* LaunchScreen.storyboard in Resources */,
 				C374778C1FF4EE1300188452 /* Assets.xcassets in Resources */,
 				C374778A1FF4EE1300188452 /* Main.storyboard in Resources */,
@@ -136,8 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E65ED01FFBC1B6002208A0 /* DragAndDropAndPushRecognizer.swift in Sources */,
+				C3FB22BB1FF65DD100D5F9B3 /* HelpingFunctions.swift in Sources */,
 				C37477871FF4EE1300188452 /* ViewController.swift in Sources */,
+				C3FB22BE1FF9638F00D5F9B3 /* RoundButton.swift in Sources */,
 				C37477851FF4EE1300188452 /* AppDelegate.swift in Sources */,
+				C3FB22B51FF636A700D5F9B3 /* CircleAudioPlayer.swift in Sources */,
+				C37477971FF4EE3F00188452 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,11 +309,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 324M5N8HKC;
 				INFOPLIST_FILE = TestTaskLivatek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.TestTaskLivatek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,11 +325,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 324M5N8HKC;
 				INFOPLIST_FILE = TestTaskLivatek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.TestTaskLivatek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

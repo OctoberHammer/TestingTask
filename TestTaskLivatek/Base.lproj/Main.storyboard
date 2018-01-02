@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6mP-mt-gze">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Player View Controller-->
+        <scene sceneID="qeq-k9-e3G">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="6mP-mt-gze" customClass="PlayerViewController" customModule="TestTaskLivatek" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oJ3-1k-jyQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bRV-Fe-9lp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eCM-YD-gbI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZI-Im-b8L" customClass="CircleAudioPlayer" customModule="TestTaskLivatek" customModuleProvider="target">
+                                <rect key="frame" x="113" y="259" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="EIS-3s-WRx"/>
+                                    <constraint firstAttribute="width" constant="150" id="dN6-z7-ffQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fraction">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="centerBtnRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Switch on to play local file" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch4-s1-4Mv">
+                                <rect key="frame" x="63" y="434" width="141" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CJb-81-CHZ"/>
+                                    <constraint firstAttribute="width" constant="141" id="erv-mj-Xqu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-kH-hPh">
+                                <rect key="frame" x="215" y="435" width="62" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6XT-TQ-6KK"/>
+                                    <constraint firstAttribute="height" constant="31" id="wjj-PH-0Ce"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="useLocalFile:" destination="6mP-mt-gze" eventType="valueChanged" id="qvD-w2-So5"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ch4-s1-4Mv" firstAttribute="leading" secondItem="gZI-Im-b8L" secondAttribute="leading" constant="-50" id="BTD-Lt-4V3"/>
+                            <constraint firstItem="gZI-Im-b8L" firstAttribute="centerY" secondItem="eCM-YD-gbI" secondAttribute="centerY" id="Erm-ZF-Cki"/>
+                            <constraint firstItem="a3G-kH-hPh" firstAttribute="top" secondItem="gZI-Im-b8L" secondAttribute="bottom" constant="26" id="Wp0-rZ-ktG"/>
+                            <constraint firstItem="a3G-kH-hPh" firstAttribute="leading" secondItem="ch4-s1-4Mv" secondAttribute="trailing" constant="11" id="anx-ya-Uqx"/>
+                            <constraint firstItem="gZI-Im-b8L" firstAttribute="centerX" secondItem="eCM-YD-gbI" secondAttribute="centerX" id="nDm-89-bNa"/>
+                            <constraint firstItem="ch4-s1-4Mv" firstAttribute="top" secondItem="gZI-Im-b8L" secondAttribute="bottom" constant="25" id="vHX-kr-w3Q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="circleAudioPlayer" destination="gZI-Im-b8L" id="v6P-zX-y5M"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1GQ-fr-gtg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-0.80000000000000004" y="-451.12443778110946"/>
         </scene>
     </scenes>
 </document>
