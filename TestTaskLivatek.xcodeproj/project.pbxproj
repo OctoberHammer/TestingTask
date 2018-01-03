@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		558A40CC7FC706F73365468D /* Pods_TestTaskLivatek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DEFC0967DB8B7211C0DC22 /* Pods_TestTaskLivatek.framework */; };
 		C3370CCD1FFCC8C800435134 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3370CCC1FFCC8C800435134 /* AsyncOperation.swift */; };
 		C37477851FF4EE1300188452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37477841FF4EE1300188452 /* AppDelegate.swift */; };
 		C37477871FF4EE1300188452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37477861FF4EE1300188452 /* ViewController.swift */; };
@@ -22,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B9A6725128CF9423A13B53A /* Pods-TestTaskLivatek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskLivatek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek.debug.xcconfig"; sourceTree = "<group>"; };
+		A2DEFC0967DB8B7211C0DC22 /* Pods_TestTaskLivatek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskLivatek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF9AF0C1B44C2CBF3AA8D7D /* Pods-TestTaskLivatek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskLivatek.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek.release.xcconfig"; sourceTree = "<group>"; };
 		C3370CCC1FFCC8C800435134 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		C37477811FF4EE1300188452 /* TestTaskLivatek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskLivatek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37477841FF4EE1300188452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +47,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558A40CC7FC706F73365468D /* Pods_TestTaskLivatek.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB854BEBC68BC77DE3506AC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2DEFC0967DB8B7211C0DC22 /* Pods_TestTaskLivatek.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3370CCB1FFCC8AF00435134 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,8 @@
 			children = (
 				C37477831FF4EE1300188452 /* TestTaskLivatek */,
 				C37477821FF4EE1300188452 /* Products */,
+				EA85F28B35C5026426080087 /* Pods */,
+				BB854BEBC68BC77DE3506AC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +122,15 @@
 				C3FB22B41FF636A700D5F9B3 /* CircleAudioPlayer.swift */,
 			);
 			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		EA85F28B35C5026426080087 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B9A6725128CF9423A13B53A /* Pods-TestTaskLivatek.debug.xcconfig */,
+				BEF9AF0C1B44C2CBF3AA8D7D /* Pods-TestTaskLivatek.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		82725B1BFBB07BFDAA84B8AC /* [CP] Embed Pods Frameworks */ = {
@@ -203,16 +227,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Pantomime/Pantomime.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pantomime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B1ECA45B690158E322C8502B /* [CP] Check Pods Manifest.lock */ = {
@@ -230,7 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -382,6 +405,7 @@
 		};
 		C37477941FF4EE1300188452 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9A6725128CF9423A13B53A /* Pods-TestTaskLivatek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +422,7 @@
 		};
 		C37477951FF4EE1300188452 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF9AF0C1B44C2CBF3AA8D7D /* Pods-TestTaskLivatek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
