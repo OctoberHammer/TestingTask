@@ -17,6 +17,7 @@ class PlayerViewController: UIViewController {
   @IBOutlet weak var circleAudioPlayer: CircleAudioPlayer!
   
   var complexGestureRecognizer: DragAndDropAndPushRecognizer?
+  
   var currentRelativeHorisontalPosition: CGFloat = 0.5
   var currentRelativeVerticalPosition: CGFloat = 0.5
   
