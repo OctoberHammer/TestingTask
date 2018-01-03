@@ -14,8 +14,8 @@ class DragAndDropAndPushRecognizer {
   
   var swipes: [UISwipeGestureRecognizer]  = []
 
-  var parentView: UIView
-  var movableView: UIView
+  weak var parentView: UIView?
+  weak var movableView: UIView?
   
   
   init(parentView: UIView, movableView: UIView) {
@@ -40,24 +40,26 @@ class DragAndDropAndPushRecognizer {
   
   
   @objc private func dragAndDropView(_ sender:UIPanGestureRecognizer){
-    self.parentView.bringSubview(toFront: movableView)
-    let translation = sender.translation(in: self.parentView)
+    guard let parentView = self.parentView, let movableView = self.movableView else {return}
+    parentView.bringSubview(toFront: movableView)
+    let translation = sender.translation(in: parentView)
     movableView.center = CGPoint(x: movableView.center.x + translation.x, y: movableView.center.y + translation.y)
-    sender.setTranslation(CGPoint.zero, in: self.parentView)
+    sender.setTranslation(CGPoint.zero, in: parentView)
   }
  
   
   @objc private func pushView(_ gesture: UISwipeGestureRecognizer) {
     var animation: ()->() = {}
+    guard let parentView = self.parentView, let movableView = self.movableView else {return}
     switch gesture.direction {
     case UISwipeGestureRecognizerDirection.left:
-      animation = { self.movableView.center.x =  self.movableView.bounds.width / 2 }
+      animation = { movableView.center.x =  movableView.bounds.width / 2 }
     case UISwipeGestureRecognizerDirection.right:
-      animation = { self.movableView.center.x = self.parentView.bounds.width - self.movableView.bounds.width / 2}
+      animation = { movableView.center.x = parentView.bounds.width - movableView.bounds.width / 2 }
     case UISwipeGestureRecognizerDirection.down:
-      animation = { self.movableView.center.y = self.parentView.bounds.height - self.movableView.bounds.height / 2 }
+      animation = { movableView.center.y = parentView.bounds.height - movableView.bounds.height / 2 }
     case UISwipeGestureRecognizerDirection.up:
-      animation = { self.movableView.center.y = self.movableView.bounds.height / 2 }
+      animation = { movableView.center.y = movableView.bounds.height / 2 }
     default:
       break
     }
