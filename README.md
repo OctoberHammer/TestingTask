@@ -59,6 +59,19 @@ And the task isn’t that complicated to require importing a lot of third party 
 
 # IMPLEMENTATION:
 
+1. Visual Component
+2. Complex Gesture Recognizer
+3. Donload Manifest, Parsing, then fetching audio file
+========================================
+
+
+### How did  I implement Complex Gesture Recognizer
+
+
+At first I implemented dragAndDrop. I used PanGestureRecognizer, strong reference to a view, which user is moving around and to a parent view.
+
+Than I tried to implement push view. For this porpose I used 4 swipe Gesture recognizer, for every direction
+
 
 
 
