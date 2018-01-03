@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		558A40CC7FC706F73365468D /* Pods_TestTaskLivatek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DEFC0967DB8B7211C0DC22 /* Pods_TestTaskLivatek.framework */; };
-		C3370CCD1FFCC8C800435134 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3370CCC1FFCC8C800435134 /* AsyncOperation.swift */; };
 		C37477851FF4EE1300188452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37477841FF4EE1300188452 /* AppDelegate.swift */; };
 		C37477871FF4EE1300188452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37477861FF4EE1300188452 /* ViewController.swift */; };
 		C374778A1FF4EE1300188452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37477881FF4EE1300188452 /* Main.storyboard */; };
@@ -26,7 +25,6 @@
 		9B9A6725128CF9423A13B53A /* Pods-TestTaskLivatek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskLivatek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek.debug.xcconfig"; sourceTree = "<group>"; };
 		A2DEFC0967DB8B7211C0DC22 /* Pods_TestTaskLivatek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskLivatek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF9AF0C1B44C2CBF3AA8D7D /* Pods-TestTaskLivatek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskLivatek.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskLivatek/Pods-TestTaskLivatek.release.xcconfig"; sourceTree = "<group>"; };
-		C3370CCC1FFCC8C800435134 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		C37477811FF4EE1300188452 /* TestTaskLivatek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskLivatek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37477841FF4EE1300188452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37477861FF4EE1300188452 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +33,7 @@
 		C374778E1FF4EE1300188452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C37477901FF4EE1300188452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C37477961FF4EE3F00188452 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		C3E311DA1FFD34F5001AF7A9 /* M3U8Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M3U8Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E65ECB1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - Suzanne Vega - Tom's Diner.mp3"; sourceTree = "<group>"; };
 		C3E65ECF1FFBC1B6002208A0 /* DragAndDropAndPushRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropAndPushRecognizer.swift; sourceTree = "<group>"; };
 		C3FB22B41FF636A700D5F9B3 /* CircleAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAudioPlayer.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		BB854BEBC68BC77DE3506AC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3E311DA1FFD34F5001AF7A9 /* M3U8Kit.framework */,
 				A2DEFC0967DB8B7211C0DC22 /* Pods_TestTaskLivatek.framework */,
 			);
 			name = Frameworks;
@@ -93,7 +93,6 @@
 			children = (
 				C3370CCB1FFCC8AF00435134 /* Resources */,
 				C37477841FF4EE1300188452 /* AppDelegate.swift */,
-				C3370CCC1FFCC8C800435134 /* AsyncOperation.swift */,
 				C37477861FF4EE1300188452 /* ViewController.swift */,
 				C3E65ED11FFC1BC9002208A0 /* ComplexGestureRecognizer */,
 				C37477961FF4EE3F00188452 /* PlayerViewController.swift */,
@@ -269,7 +268,6 @@
 				C3FB22BE1FF9638F00D5F9B3 /* RoundButton.swift in Sources */,
 				C37477851FF4EE1300188452 /* AppDelegate.swift in Sources */,
 				C3FB22B51FF636A700D5F9B3 /* CircleAudioPlayer.swift in Sources */,
-				C3370CCD1FFCC8C800435134 /* AsyncOperation.swift in Sources */,
 				C37477971FF4EE3F00188452 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

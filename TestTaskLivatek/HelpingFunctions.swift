@@ -34,6 +34,40 @@ extension AVAudioPlayer: Player {
 }
 
 
+extension FileManager {
+  
+  // Merge several files
+  func merge(files: [URL], to destination: URL, chunkSize: Int = 1000000) throws {
+    
+    FileManager.default.createFile(atPath: destination.path, contents: nil, attributes: nil)
+    
+    let writer = try FileHandle(forWritingTo: destination)
+    try files.forEach({ partLocation in
+      let reader = try FileHandle(forReadingFrom: partLocation)
+      var data = reader.readDataToEndOfFile()
+      while data.count > 0 {
+        writer.write(data)
+        data = reader.readDataToEndOfFile()
+      }
+      reader.closeFile()
+    })
+    writer.closeFile()
+  }
+}
+
+
+
+
+extension String {
+  var length: Int {
+    return self.count
+  }
+  
+  func substring(_ from: Int) -> String {
+    return self.substring(from: self.characters.index(self.startIndex, offsetBy: from))
+  }
+}
+
 
 
 func cast<Value, Result>(value: Value) -> Result? {
