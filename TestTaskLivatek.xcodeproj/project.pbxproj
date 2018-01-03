@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3370CCD1FFCC8C800435134 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3370CCC1FFCC8C800435134 /* AsyncOperation.swift */; };
 		C37477851FF4EE1300188452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37477841FF4EE1300188452 /* AppDelegate.swift */; };
 		C37477871FF4EE1300188452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37477861FF4EE1300188452 /* ViewController.swift */; };
 		C374778A1FF4EE1300188452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37477881FF4EE1300188452 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3370CCC1FFCC8C800435134 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		C37477811FF4EE1300188452 /* TestTaskLivatek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskLivatek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37477841FF4EE1300188452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37477861FF4EE1300188452 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3370CCB1FFCC8AF00435134 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3E65ECB1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C37477781FF4EE1300188452 = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +76,9 @@
 		C37477831FF4EE1300188452 /* TestTaskLivatek */ = {
 			isa = PBXGroup;
 			children = (
-				C3E65ECB1FFA5B5A002208A0 /* 02 - Suzanne Vega - Tom's Diner.mp3 */,
+				C3370CCB1FFCC8AF00435134 /* Resources */,
 				C37477841FF4EE1300188452 /* AppDelegate.swift */,
+				C3370CCC1FFCC8C800435134 /* AsyncOperation.swift */,
 				C37477861FF4EE1300188452 /* ViewController.swift */,
 				C3E65ED11FFC1BC9002208A0 /* ComplexGestureRecognizer */,
 				C37477961FF4EE3F00188452 /* PlayerViewController.swift */,
@@ -235,6 +246,7 @@
 				C3FB22BE1FF9638F00D5F9B3 /* RoundButton.swift in Sources */,
 				C37477851FF4EE1300188452 /* AppDelegate.swift in Sources */,
 				C3FB22B51FF636A700D5F9B3 /* CircleAudioPlayer.swift in Sources */,
+				C3370CCD1FFCC8C800435134 /* AsyncOperation.swift in Sources */,
 				C37477971FF4EE3F00188452 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

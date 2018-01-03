@@ -21,13 +21,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZI-Im-b8L" customClass="CircleAudioPlayer" customModule="TestTaskLivatek" customModuleProvider="target">
-                                <rect key="frame" x="113" y="259" width="150" height="150"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch on to play local file" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch4-s1-4Mv">
+                                <rect key="frame" x="67" y="47" width="157.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-kH-hPh">
+                                <rect key="frame" x="235.5" y="48" width="62" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="EIS-3s-WRx"/>
-                                    <constraint firstAttribute="width" constant="150" id="dN6-z7-ffQ"/>
+                                    <constraint firstAttribute="width" constant="60" id="6XT-TQ-6KK"/>
+                                    <constraint firstAttribute="height" constant="31" id="wjj-PH-0Ce"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="useLocalFile:" destination="6mP-mt-gze" eventType="valueChanged" id="qvD-w2-So5"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gZI-Im-b8L" customClass="CircleAudioPlayer" customModule="TestTaskLivatek" customModuleProvider="target">
+                                <rect key="frame" x="111" y="276" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-tf-V1W">
+                                        <rect key="frame" x="-96" y="7" width="82" height="109"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="fraction">
                                         <real key="value" value="0.0"/>
@@ -37,35 +57,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Switch on to play local file" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch4-s1-4Mv">
-                                <rect key="frame" x="63" y="434" width="141" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="CJb-81-CHZ"/>
-                                    <constraint firstAttribute="width" constant="141" id="erv-mj-Xqu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-kH-hPh">
-                                <rect key="frame" x="215" y="435" width="62" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="6XT-TQ-6KK"/>
-                                    <constraint firstAttribute="height" constant="31" id="wjj-PH-0Ce"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="useLocalFile:" destination="6mP-mt-gze" eventType="valueChanged" id="qvD-w2-So5"/>
-                                </connections>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ch4-s1-4Mv" firstAttribute="leading" secondItem="gZI-Im-b8L" secondAttribute="leading" constant="-50" id="BTD-Lt-4V3"/>
-                            <constraint firstItem="gZI-Im-b8L" firstAttribute="centerY" secondItem="eCM-YD-gbI" secondAttribute="centerY" id="Erm-ZF-Cki"/>
-                            <constraint firstItem="a3G-kH-hPh" firstAttribute="top" secondItem="gZI-Im-b8L" secondAttribute="bottom" constant="26" id="Wp0-rZ-ktG"/>
-                            <constraint firstItem="a3G-kH-hPh" firstAttribute="leading" secondItem="ch4-s1-4Mv" secondAttribute="trailing" constant="11" id="anx-ya-Uqx"/>
-                            <constraint firstItem="gZI-Im-b8L" firstAttribute="centerX" secondItem="eCM-YD-gbI" secondAttribute="centerX" id="nDm-89-bNa"/>
-                            <constraint firstItem="ch4-s1-4Mv" firstAttribute="top" secondItem="gZI-Im-b8L" secondAttribute="bottom" constant="25" id="vHX-kr-w3Q"/>
+                            <constraint firstItem="ch4-s1-4Mv" firstAttribute="leading" secondItem="eCM-YD-gbI" secondAttribute="leading" constant="67" id="ERn-cm-Jj3"/>
+                            <constraint firstItem="a3G-kH-hPh" firstAttribute="leading" secondItem="ch4-s1-4Mv" secondAttribute="trailing" constant="11" id="Era-nI-iZd"/>
+                            <constraint firstItem="ch4-s1-4Mv" firstAttribute="top" secondItem="oJ3-1k-jyQ" secondAttribute="bottom" constant="27" id="SQI-Fr-RWK"/>
+                            <constraint firstItem="a3G-kH-hPh" firstAttribute="top" secondItem="oJ3-1k-jyQ" secondAttribute="bottom" constant="28" id="VVs-lU-GiO"/>
                         </constraints>
                     </view>
                     <connections>
