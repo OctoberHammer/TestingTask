@@ -72,6 +72,7 @@ At first I implemented dragAndDrop. I used PanGestureRecognizer, strong referenc
 
 Than I tried to implement push view. For this porpose I used 4 swipe Gesture recognizer, for every direction
 
+https://youtu.be/KYofVwcY8IQ
 
 
 
